@@ -57,7 +57,7 @@ body.snip-open {
 
 // Base layout
 .snip-layout {
-    background: rgba(123, 123, 123, .75);
+    background: rgba(0, 0, 0, 0.25);
     bottom: 0;
     color: palette(layout, color);
     font-family: $font-base;
@@ -68,7 +68,7 @@ body.snip-open {
     padding: 0;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 92px;
     z-index: $_base-z-index;
 
     // Compound settings and reset
@@ -100,6 +100,10 @@ body.snip-open {
     // Responsive
     @media #{$mq-large} {
         font-size: fontsize(reset, large);
-        padding: $_base-padding;
+        // padding: $_base-padding;
+    }
+
+    #snipcart-sub-layout {
+        min-height: 100vh;
     }
 }

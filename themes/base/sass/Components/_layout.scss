@@ -21,9 +21,10 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
 .snip-layout__main-container {
     background: palette(layout, background);
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     max-width: 62.25em;
     position: relative;
+    height: 100%;
 }
 
 .snip-layout__close {
@@ -32,13 +33,13 @@ $_layout-content-border: 1px solid palette(layout, content-border);
     padding: .333em;
     padding: 0;
     position: absolute;
-    right: .417em;
-    top: .1em;
+    right: 20px;
+    top: 13px;
     z-index: 2;
 
     @media #{$mq-medium} {
         font-size: $_layout-close-font-size;
-        top: .208em;
+        top: 16px;
 
         &.js-hidden {
             display: none;

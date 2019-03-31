@@ -11,7 +11,7 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_header-height: 105px;
+$_header-height: 59px;
 $_header-total-height: 38px;
 
 
@@ -20,13 +20,12 @@ $_header-total-height: 38px;
 \*------------------------------------*/
 
 .snip-header {
-    @include font-bold;
     background: palette(header, background);
     color: palette(header, color);
     padding: $padding-small;
     position: relative;
     text-align: left;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     @media #{$mq-medium} {
         color: palette(header, color);
@@ -79,7 +78,7 @@ $_header-total-height: 38px;
 
 .snip-header__title {
     display: none;
-    font-size: fontsize(header, large) / 2;
+    font-size: fontsize(header, medium);
     text-align: center;
 
     // [2]
@@ -89,7 +88,8 @@ $_header-total-height: 38px;
 
     @media #{$mq-medium} {
         display: block;
-        font-size: fontsize(header, large);
+        font-size: 1.4rem;
+        font-weight: 300;
         left: 1.25em;
         line-height: $_header-height;
         position: absolute;
@@ -102,18 +102,17 @@ $_header-total-height: 38px;
     border-radius: 5px;
     display: inline-block;
     padding: .5em;
+    font-size: 1.4rem;
 
     @media #{$mq-medium} {
-        height: $_header-total-height;
-        line-height: $_header-total-height;
-        margin-top: 2.188em;
-        padding: 0 .625em;
+        padding: 22px .625em 0;
     }
 }
 
 .snip-header__total-label {
     color: palette(header, label-color);
     margin-right: .625em;
+    text-transform: uppercase;
 }
 
 .snip-header__continue {

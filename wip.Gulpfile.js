@@ -41,7 +41,7 @@ gulp.task('sass', function() {
     gulp.src(sources.sass)
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({cascade: false, browsers: ['> 0.25%']}))
-        .pipe(gulp.dest(workingDir));
+        .pipe(gulp.dest("/Users/zack/Documents/develop/personal/allourformerselves/src/snipcart"));
 });
 
 gulp.task('min', ['sass'], function() {
@@ -49,7 +49,7 @@ gulp.task('min', ['sass'], function() {
         .pipe(postcss([mqpacker]))
         .pipe(minifyCss())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(workingDir));
+        .pipe(gulp.dest("/Users/zack/Documents/develop/personal/allourformerselves/src/snipcart"));
 });
 
 gulp.task('watch', function() {

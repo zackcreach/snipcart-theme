@@ -15,7 +15,7 @@ workingDir = 'themes/base'
 
 sources =
   sass: "#{workingDir}/sass/snipcart.scss"
-  compiled: "#{workingDir}/snipcart.css"
+  compiled: "/Users/zack/Documents/develop/personal/allourformerselves/static/snipcart/snipcart.css"
 
 watch =
   sass: "#{workingDir}/sass/**/*.scss"
@@ -33,19 +33,19 @@ gulp.task 'sass', ->
   gulp.src sources.sass
     .pipe(sass().on('error', sass.logError))
     .pipe autoprefixer(cascade: false, browsers: ['> 0.25%'])
-    .pipe gulp.dest(workingDir)
+    .pipe gulp.dest("/Users/zack/Documents/develop/personal/allourformerselves/static/snipcart")
 
 gulp.task 'min', ['sass'], ->
    gulp.src sources.compiled
     .pipe(postcss([mqpacker]))
     .pipe(minifyCss())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(workingDir))
+    .pipe(gulp.dest("/Users/zack/Documents/develop/personal/allourformerselves/static/snipcart"))
 
   gulp.src(sources.compiled)
     .pipe(minifyCss())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(workingDir))
+    .pipe(gulp.dest("/Users/zack/Documents/develop/personal/allourformerselves/static/snipcart"))
 
 gulp.task 'watch', ->
   gulp.watch [watch.sass], ['sass']

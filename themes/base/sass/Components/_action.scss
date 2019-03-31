@@ -20,6 +20,8 @@ $_action-border: 1px solid palette(layout, border);
 .snip-actions {
     border-top: $_action-border;
     padding: $padding-small;
+    text-transform: uppercase;
+    background-color: white;
 
     // [1]
     @include clearfix;

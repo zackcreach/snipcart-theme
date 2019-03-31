@@ -77,7 +77,7 @@ $_form-border: 1px solid palette(form, border);
 
 .snip-form__error {
     background: palette(error, color);
-    border-radius: 3px;
+    border-radius: 0;
     color: palette(error, text-color--invert);
     font-size: fontsize(form, base);
     padding: .357em;

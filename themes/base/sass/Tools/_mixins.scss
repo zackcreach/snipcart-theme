@@ -37,12 +37,13 @@ $_reset-form-transition: border .66s ease;
 
 @mixin input-reset {
     background: palette(form, background);
-    border-radius: 3px;
+    border-radius: 0;
     border: 1px solid palette(form, border);
     box-sizing: border-box;
     color: palette(form, color);
     display: block;
     font-size: fontsize(reset, base);
+    border-radius: 0;
     height: auto;
     line-height: 18px;
     margin: 0;

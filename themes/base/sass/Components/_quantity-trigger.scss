@@ -15,7 +15,7 @@
 
 // [3]
 $_qt-text-add: "+";
-$_qt-text-remove: "-";
+$_qt-text-remove: "–";
 
 
 /*------------------------------------*\
@@ -76,6 +76,7 @@ $_qt-text-remove: "-";
 
     &:hover {
         background-color: palette(quantity-trigger, background--hover);
+        color: white;
     }
 
     &:before {
@@ -89,7 +90,7 @@ $_qt-text-remove: "-";
     &:before {
         // [3]
         content: $_qt-text-add;
-        line-height: 1em;
+        line-height: 15px;
     }
 }
 
@@ -97,7 +98,7 @@ $_qt-text-remove: "-";
     &:before {
         // [3]
         content: $_qt-text-remove;
-        line-height: 14px;
+        line-height: 15px;
     }
 }
 

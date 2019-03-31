@@ -13,13 +13,13 @@ $palettes: (
     ),
     button: (
         background: #555,
-        background--highlight: #efe778,
+        background--highlight: #333,
         background--hover: darken(#555, 10%),
         background--danger: #f10,
         background--danger-hover: darken(#f10, 10%),
-        background--highlight-hover: darken(#efe778, 10%),
+        background--highlight-hover: darken(#333, 10%),
         color: #fff,
-        color--highlight: #222,
+        color--highlight: #fff,
     ),
     error: (
         color: #f10,
@@ -29,7 +29,7 @@ $palettes: (
     badge: (
         background--success: #76d443,
         background--error: #f10,
-        background--warn: #efe778,
+        background--warn: #333,
         text--success: #333,
         text--error: #fff,
         text--warn: #333
@@ -37,14 +37,14 @@ $palettes: (
     flash: (
         background--error: #f10,
         background--success: #76d443,
-        background--warning: #efe778,
+        background--warning: #333,
         background--confirm: #222,
         border: #333,
         color: #333,
         color--invert: #fff
     ),
     footer: (
-        background: #222,
+        background: black,
         color: #555,
         color--highlight: #999
     ),
@@ -57,8 +57,8 @@ $palettes: (
         label-color: #999
     ),
     header: (
-        background: #222,
-        background--highlight: #111,
+        background: black,
+        background--highlight: black,
         color: #fff,
         label-color: #999
     ),
@@ -73,7 +73,7 @@ $palettes: (
     ),
     loader: (
         background: #222,
-        background--highlight: #efe778
+        background--highlight: #333
     ),
     product: (
         background: #f8f8f8,
@@ -83,7 +83,7 @@ $palettes: (
     ),
     quantity-trigger: (
         background: #ccc,
-        background--hover: #efe778,
+        background--hover: #333,
         background--disabled: #eee,
         color: #111,
         color--disabled: #bbb

@@ -165,6 +165,10 @@ $_notice-error--text-color: palette(static, color--highlight);
     }
 }
 
+.snip-table__item {
+    background-color: white;
+}
+    
 .snip-table__loading {
     text-align: center;
     font-size: fontsize(table, base);
