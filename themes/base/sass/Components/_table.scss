@@ -135,7 +135,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
 .snip-table__header {
     font-size: fontsize(table, small);
-    padding: 1em 2em;
+    padding: 1em 30px;
     text-transform: uppercase;
 
     ~ .snip-table__header {
@@ -146,7 +146,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 .snip-table__body {
     border-top: $_table-border;
     display: table-row-group;
-    padding: 1.429em;
+    padding: 1.429em 30px;
 }
 
 .snip-table__body--small {

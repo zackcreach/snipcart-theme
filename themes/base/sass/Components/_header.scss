@@ -21,16 +21,13 @@ $_header-total-height: 38px;
 
 .snip-header {
     background: palette(header, background);
-    color: palette(header, color);
-    padding: $padding-small;
+    padding: 0;
+    height: $_header-height;
     position: relative;
     text-align: left;
     // text-transform: uppercase;
 
     @media #{$mq-medium} {
-        color: palette(header, color);
-        height: $_header-height;
-        padding: 0;
         text-align: center;
     }
 }
@@ -78,7 +75,9 @@ $_header-total-height: 38px;
 
 .snip-header__title {
     display: none;
+    color: #ccc;
     font-size: fontsize(header, medium);
+    line-height: $_header-height;
     text-align: center;
 
     // [2]
@@ -90,7 +89,7 @@ $_header-total-height: 38px;
         display: block;
         font-size: 1.4rem;
         font-weight: 300;
-        left: 1.25em;
+        left: 30px;
         line-height: $_header-height;
         position: absolute;
         text-align: left;
@@ -101,16 +100,14 @@ $_header-total-height: 38px;
     background: palette(header, background--highlight);
     border-radius: 5px;
     display: inline-block;
-    padding: .5em;
+    padding: 20px 1em 0;
     font-size: 1.4rem;
-
-    @media #{$mq-medium} {
-        padding: 22px .625em 0;
-    }
+    font-weight: 300;
+    color: #ccc;
 }
 
 .snip-header__total-label {
-    color: palette(header, label-color);
+    color: #777;
     margin-right: .625em;
     text-transform: uppercase;
 }

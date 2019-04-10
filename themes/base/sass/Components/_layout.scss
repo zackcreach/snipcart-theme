@@ -29,7 +29,7 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
 .snip-layout__close {
     color: palette(layout, close-color);
-    font-size: $_layout-close-font-size * 1.2;
+    font-size: $_layout-close-font-size;
     padding: .333em;
     padding: 0;
     position: absolute;
@@ -39,8 +39,8 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
     @media #{$mq-medium} {
         font-size: $_layout-close-font-size;
-        top: 16px;
-
+        top: 13px;
+        
         &.js-hidden {
             display: none;
         }
@@ -59,6 +59,7 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
 .snip-layout__content {
     padding: 1em 0;
+    background-color: white;
 
     @media #{$mq-medium} {
         padding: 2em 0;

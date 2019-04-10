@@ -10,7 +10,7 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_steps-height: 60px;
+$_steps-height: 59px;
 
 $_steps-border: 1px solid palette(step, border);
 
@@ -97,9 +97,8 @@ $_steps-border: 1px solid palette(step, border);
     display: none;
 
     @media #{$mq-medium} {
-        @include font-bold;
         display: table-cell;
-        font-size: fontsize(step, small);
+        font-size: 10px;
         line-height: 16px;
         padding-right: .5em;
         text-align: left;

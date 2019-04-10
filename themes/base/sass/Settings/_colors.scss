@@ -9,7 +9,7 @@
 
 $palettes: (
     action: (
-        link: #999
+        link: #777
     ),
     button: (
         background: #555,
@@ -46,27 +46,27 @@ $palettes: (
     footer: (
         background: black,
         color: #555,
-        color--highlight: #999
+        color--highlight: #ccc
     ),
     form: (
         background: #fff,
-        border: #eee,
+        border: #ccc,
         border--focus: #333,
-        color: #555,
+        color: #333,
         color--highlight: #333,
-        label-color: #999
+        label-color: #777,
     ),
     header: (
         background: black,
         background--highlight: black,
         color: #fff,
-        label-color: #999
+        label-color: #ccc
     ),
     layout: (
         background: #fff,
         border: #eee,
         close-color: #fff,
-        color: #999,
+        color: #777,
         content-background: #f8f8f8,
         content-border: #bbb,
         loading-color: #333
